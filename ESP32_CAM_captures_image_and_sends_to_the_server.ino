@@ -19,7 +19,7 @@ String defaultBackupSSID = "<Your wifi Name>";
 String defaultBackupPassword = "<wifi Password>";  
 
 // Server details
-const char* serverName = "emb-service.onrender.com";  
+const char* serverName = "https://your-server-url/upload";  
 String serverPath = "/api/v1/feedback/upload";
 const int serverPort = 443;  // HTTPS uses port 443
 
@@ -52,7 +52,7 @@ void fetchCaptureInterval() {
     if (WiFi.status() != WL_CONNECTED) return;
 
     HTTPClient http;
-    http.begin("https://emb-service.onrender.com/api/v1/stats/get-capture-interval");
+    http.begin("https://your-server-url/upload/api/v1/stats/get-capture-interval");
     http.setTimeout(5000);
 
     int httpResponseCode = http.GET();
@@ -244,7 +244,7 @@ bool fetchWiFiFromServer() {
     if (WiFi.status() != WL_CONNECTED) return false;
 
     HTTPClient http;
-    http.begin("https://emb-service.onrender.com/api/v1/stats/get-wifi");  
+    http.begin("https://your-server-url/upload/api/v1/stats/get-wifi");  
     http.setTimeout(5000);
     int httpResponseCode = http.GET();
 
