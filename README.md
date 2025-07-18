@@ -104,8 +104,9 @@ Images are sent as `multipart/form-data` with `Content-Type: image/jpeg`.
 
 ## 👨‍🎓 Project Info
 
-**Final Year Project** – B.Tech in Computer Science & Engineering
-**Title:** Mind Sync Smart Glasses
-**Role:** Embedded Systems Developer
+Final Year Project
+Degree: B.Tech in Computer Science & Engineering
+Title: Mind Sync Smart Glasses
+Role: Embedded Systems Developer
 
 ---
